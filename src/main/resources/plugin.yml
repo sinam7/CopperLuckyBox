@@ -1,0 +1,13 @@
+name: CopperLuckyBox
+version: 0.1-SNAPSHOT
+main: com.sinam7.copperluckybox.Main
+description: Luckybox made by copper!
+author: sinam7
+website: https://github.com/sinam7
+api-version: 1.19
+
+commands:
+  clb:
+    description: CopperLuckyBox command
+    usage: /<command>
+    aliases: [luckybox, copperluckybox]
