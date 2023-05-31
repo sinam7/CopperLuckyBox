@@ -1,0 +1,41 @@
+#1:2:8:28
+luckybox:
+  lucky_box_copper:
+    dirt: 30
+    gravel: 20
+    cobblestone: 30
+    coal: 16
+    copper_ore: 3
+    iron_ingot: 1
+  lucky_box_iron:
+    dirt: 20
+    gravel: 10
+    cobblestone: 20
+    coal: 10
+    copper_ore: 10
+    iron_ingot: 20
+    gold_ingot: 9
+    diamond: 1
+  lucky_box_gold:
+    dirt: 10
+    gravel: 10
+    cobblestone: 25
+    coal: 10
+    copper_ore: 10
+    iron_ingot: 20
+    gold_ingot: 10
+    diamond: 5
+  lucky_box_diamond:
+    dirt: 10
+    gravel: 10
+    cobblestone: 25
+    coal: 10
+    iron_ingot: 10
+    gold_ingot: 10
+    diamond: 20
+    emerald: 5
+  lucky_box_emerald:
+    lucky_box_copper: 25
+    lucky_box_iron: 25
+    lucky_box_gold: 25
+    lucky_box_diamond: 25

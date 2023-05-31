@@ -11,6 +11,19 @@ public class CommandManager implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (sender instanceof Player player) {
+            if (args.length == 1) {
+                int i;
+                try {
+                    i = Integer.parseInt(args[0]);
+                    for (int j = 0; j < i; j++) {
+                        RecipeManager.luckyBoxes.forEach(luckyBox -> player.getInventory().addItem(luckyBox));
+                    }
+                } catch (NumberFormatException e) {
+                    RecipeManager.luckyBoxes.forEach(luckyBox -> player.getInventory().addItem(luckyBox));
+                }
+
+                return true;
+            }
             RecipeManager.luckyBoxes.forEach(luckyBox -> player.getInventory().addItem(luckyBox));
             return true;
         }

@@ -11,8 +11,13 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         // print to console
         getLogger().info("Hello, Minecraft!");
-        RecipeManager.init();
         Objects.requireNonNull(getCommand("clb")).setExecutor(new CommandManager());
+        getServer().getPluginManager().registerEvents(new EventManager(), this);
+
+        RecipeManager.init();
+        ConfigManager.init(this);
+        ConfigManager.loadConfig();
+        LuckyBox.init();
     }
 
 }
